@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Futura-Light";
+  src: url("../../../public/fonts/futura\ light\ bt.ttf");
+}
+
+@font-face {
+  font-family: "Futura-Medium";
+  src: url("../../../public/fonts/Futura\ Book\ font.ttf");
+}
+
+@font-face {
+  font-family: "Futura-Bold";
+  src: url("../../../public/fonts/Futura\ Heavy\ font.ttf");
+}
+
+$only-white: #fff;
+$only-black: #000;
+$fontFamilyText: "Futura-Light";
+$fontFamilyTitles: "Futura-Bold";
+$only-gray: #5b5b5b;
+$gray-hover: #b2b2b2;
+$off-black: #333333;
+$off-white: #fffdf0;
+$background: #171717;
+$green-medium: #609966;
+$green-black: #1c6758;

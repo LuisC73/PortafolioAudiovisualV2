@@ -1,0 +1,32 @@
+@use "../_layout/vars" as vars;
+@use "../_layout/mixins" as mixin;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: vars.$fontFamilyTitles;
+}
+
+p,
+input,
+span,
+a {
+  font-family: vars.$fontFamilyText;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+  background: vars.$only-white;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: vars.$only-gray;
+  border-radius: 10px;
+}
