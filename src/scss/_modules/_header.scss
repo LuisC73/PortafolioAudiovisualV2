@@ -4,6 +4,8 @@
 .header {
   position: relative;
   width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
   height: 100vh;
   background-color: vars.$background;
   color: vars.$only-white;
@@ -20,13 +22,11 @@
     }
   }
 
-  &__title {
-    display: block;
-    padding: 2px 15px;
-    font-size: 2.5rem;
-    letter-spacing: 0.5rem;
+  &__logo {
+    width: 110px;
 
-    @include mixin.media() {
+    @include mixin.media(1040px) {
+      margin-left: 150px;
     }
   }
 
@@ -45,22 +45,32 @@
     cursor: pointer;
 
     @include mixin.media() {
-      display: none;
+      display: block;
     }
   }
 
   &__openIcon {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     color: vars.$only-white;
   }
 
   &__decorate {
     display: none;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 
     @include mixin.media() {
-      display: block;
+      display: none;
       font-size: 2.4rem;
       width: fit-content;
+      cursor: pointer;
+    }
+
+    &:hover {
+      color: vars.$green-medium;
     }
   }
 
@@ -99,30 +109,13 @@
     }
 
     @include mixin.media() {
-      position: relative;
-      width: max-content;
-      height: max-content;
-      padding: 0;
-      background-color: transparent;
-      backdrop-filter: none;
-      transform: translateX(0);
-      @include mixin.flex(space-between, center, row);
-      opacity: 1;
-      visibility: visible;
-      column-gap: 40px;
-      -webkit-transform: translateX(0);
-      -moz-transform: translateX(0);
-      -ms-transform: translateX(0);
-      -o-transform: translateX(0);
+      width: 420px;
     }
   }
 
   &__close {
     display: block;
-
-    @include mixin.media() {
-      display: none;
-    }
+    cursor: pointer;
   }
 
   &__closeIcon {
@@ -161,17 +154,20 @@
   }
 
   &__info {
+    position: relative;
     width: 85%;
+    max-width: 700px;
     margin: 40px auto 0 auto;
     @include mixin.flex(flex-start, flex-start, column);
     row-gap: 5px;
+    z-index: 2;
 
     @include mixin.media() {
       position: absolute;
-      top: calc(30% - 60px);
-      right: calc(20% - 130px);
-      width: 260px;
-      height: 170px;
+      top: calc(55% - 150px);
+      left: calc(20% - 130px);
+      width: max-content;
+      height: 320px;
       margin: 0;
       row-gap: 10px;
       z-index: 2;
@@ -188,13 +184,16 @@
 
   &__h1 {
     order: 2;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     text-transform: uppercase;
     color: vars.$only-white;
-    font-family: "Futura-Medium";
+    font-family: "Futura-Light";
 
     @include mixin.media() {
-      display: none;
+      display: block;
+      font-size: 4.2rem;
+      letter-spacing: 0.5rem;
+      -webkit-text-stroke: 1px vars.$only-white;
     }
   }
 
@@ -204,98 +203,32 @@
     font-family: inherit;
 
     @include mixin.media() {
-      font-size: 8rem;
-      font-family: "Futura-Bold";
-      color: transparent;
-      -webkit-text-stroke: 1px vars.$only-white;
-      -webkit-background-clip: text;
+      -webkit-text-stroke: 1px vars.$green-medium;
     }
   }
 
   &__h2 {
     order: 1;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: vars.$green-black;
     font-family: "Futura-Medium";
 
     @include mixin.media() {
-      display: none;
+      font-size: 2rem;
     }
   }
 
   &__p {
     order: 3;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: vars.$only-white;
 
     @include mixin.media() {
-      width: 100%;
-      font-size: 1.8rem;
-      letter-spacing: 0.2rem;
+      width: 350px;
+      text-align: start;
+      font-size: 1.6rem;
+      letter-spacing: 0.1rem;
       color: vars.$green-medium;
-    }
-  }
-
-  &__name {
-    display: none;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-
-    @include mixin.media() {
-      position: absolute;
-      top: calc(50% - 30px);
-      left: calc(45% - 270px);
-      width: 540px;
-      height: 60px;
-      display: block;
-      font-size: 8rem;
-      text-transform: capitalize;
-      font-family: "Futura-Bold";
-      color: vars.$only-white;
-      -webkit-text-stroke: 2px vars.$only-white;
-      -webkit-background-clip: text;
-      z-index: 2;
-    }
-
-    &:hover {
-      transform: rotate(-5deg) translateX(-10px);
-      -webkit-transform: rotate(-5deg) translateX(-10px);
-      -moz-transform: rotate(-5deg) translateX(-10px);
-      -ms-transform: rotate(-5deg) translateX(-10px);
-      -o-transform: rotate(-5deg) translateX(-10px);
-    }
-  }
-
-  &__lastname {
-    font-size: inherit;
-    font-family: inherit;
-    color: vars.$green-medium;
-    -webkit-text-stroke: 2px vars.$green-medium;
-  }
-
-  &__prof {
-    display: none;
-    font-family: "Futura-Light";
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-
-    @include mixin.media() {
-      position: absolute;
-      bottom: 20px;
-      right: 10px;
-      display: block;
-      font-size: 2rem;
-      color: vars.$green-medium;
-    }
-
-    &:hover {
-      color: vars.$only-white;
     }
   }
 
@@ -309,6 +242,12 @@
     @include mixin.media() {
       display: none;
     }
+
+    & img {
+      @include mixin.media(680px) {
+        object-fit: fill;
+      }
+    }
   }
 
   &__imgContent {
@@ -316,17 +255,13 @@
 
     @include mixin.media() {
       position: absolute;
-      left: calc(22% - 210px);
-      top: calc(56% - 45vh);
-      width: 420px;
-      height: 85vh;
+      right: 0;
+      top: 0;
+      width: 40%;
+      height: 100vh;
       display: block;
-      border-radius: 7px;
-      -webkit-border-radius: 7px;
-      -moz-border-radius: 7px;
-      -ms-border-radius: 7px;
-      -o-border-radius: 7px;
-      overflow: hidden;
+      clip-path: ellipse(95% 95% at right);
+
       z-index: 1;
 
       &::before {
@@ -348,7 +283,7 @@
     order: 5;
     width: 100%;
     padding: 10px;
-    border: 1px solid vars.$only-white;
+    border: 2px solid vars.$only-white;
     background-color: transparent;
     font-size: 1.5rem;
     text-align: center;
@@ -382,9 +317,13 @@
     }
 
     @include mixin.media() {
+      width: 300px;
       margin-top: 20px;
-      font-size: 2rem;
+
+      font-size: 1.8rem;
       display: block;
+      text-transform: uppercase;
+      letter-spacing: 0.3rem;
     }
   }
 
@@ -394,18 +333,17 @@
   }
 
   &__social {
+    position: relative;
+    order: 6;
+    margin: 40px auto 0 auto;
     width: 250px;
     max-width: 250px;
-    position: absolute;
-    bottom: 5px;
-    left: calc(50% - 125px);
     @include mixin.flex(space-between, center, row);
 
     @include mixin.media() {
-      bottom: 40%;
-      left: 10px;
+      position: relative;
       width: max-content;
-      flex-direction: column;
+      margin: 40px 0 0 0;
       gap: 20px;
       z-index: 2;
     }
@@ -420,8 +358,17 @@
   }
 
   &__iconSocial {
-    font-size: 1.5rem;
-    color: vars.$green-black;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid vars.$green-medium;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 2rem;
+    color: vars.$off-white;
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -433,8 +380,35 @@
       color: vars.$only-white;
     }
 
-    &:hover {
-      color: vars.$green-medium;
+    &--youtube {
+      border-color: #c4302b;
+
+      &:hover {
+        background-color: #c4302b;
+      }
+    }
+
+    &--instagram {
+      border-color: #c13584;
+
+      &:hover {
+        background: radial-gradient(
+          circle at 30% 107%,
+          #fdf497 0%,
+          #fdf497 5%,
+          #fd5949 45%,
+          #d6249f 60%,
+          #285aeb 90%
+        );
+      }
+    }
+
+    &--linkedin {
+      border-color: #0e76a8;
+
+      &:hover {
+        background-color: #0e76a8;
+      }
     }
   }
 }

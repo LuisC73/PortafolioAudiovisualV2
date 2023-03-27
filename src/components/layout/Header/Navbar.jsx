@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import { FaAlignRight, FaTimes, FaMoon } from "react-icons/fa";
+import { FaTimes, FaMoon } from "react-icons/fa";
+import { HiMenuAlt3 } from "react-icons/hi";
+import images from "../../../helpers/images";
 
 function Navbar() {
   const [menuActive, setMenuActive] = useState(false);
   return (
     <nav className="header__nav">
-      <p className="header__title">
-        A<span className="header__span">M</span>
-      </p>
+      <img src={images.logo} alt="Logo" className="header__logo" />
 
       <ul className={`header__ul ${menuActive ? "header__ul--active" : ""}`}>
         <li className="header__close">
@@ -41,7 +41,7 @@ function Navbar() {
         className="header__button"
         onClick={() => setMenuActive(!menuActive)}
       >
-        <FaAlignRight className="header__openIcon" />
+        <HiMenuAlt3 className="header__openIcon" />
       </button>
       <FaMoon className="header__decorate" />
     </nav>
