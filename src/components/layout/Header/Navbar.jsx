@@ -18,7 +18,7 @@ function Navbar() {
         </li>
         <li className="header__li">
           <a href="#" className="header__a">
-            Sobre mi
+            Sobre Mí
           </a>
         </li>
         <li className="header__li">
@@ -28,7 +28,7 @@ function Navbar() {
         </li>
         <li className="header__li">
           <a href="#" className="header__a">
-            Fotografias
+            Fotografías
           </a>
         </li>
         <li className="header__li">

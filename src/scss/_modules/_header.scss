@@ -94,7 +94,7 @@
     -moz-transition: all 0.5s ease-in-out;
     -ms-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
-    z-index: 1;
+    z-index: 3;
     opacity: 0;
     visibility: hidden;
 
@@ -301,8 +301,8 @@
       top: 0;
       width: 100%;
       height: 100%;
-      border: 1px solid vars.$green-medium;
-      background-color: vars.$green-medium;
+      border: 1px solid vars.$green-black;
+      background-color: vars.$green-black;
       transform: translateX(-100%);
       transition: all 0.5s;
       z-index: -1;

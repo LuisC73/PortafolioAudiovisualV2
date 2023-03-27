@@ -23,15 +23,23 @@ function Header() {
           <img src={images.Me} alt="Me" className="header__img" />
         </figure>
         <div className="header__social">
-          <a href="#" className="header__link">
+          <a
+            href="https://www.youtube.com/@anamanuelaramirezcurequia1409"
+            className="header__link"
+            target="_blank"
+          >
             <FaYoutube className="header__iconSocial header__iconSocial--youtube" />
           </a>
-          <a href="#" className="header__link">
+          <a
+            href="https://www.instagram.com/ana_ramireez03/"
+            className="header__link"
+            target="_blank"
+          >
             <FaInstagram className="header__iconSocial header__iconSocial--instagram" />
           </a>
-          <a href="#" className="header__link">
+          {/* <a href="#" className="header__link">
             <FaLinkedinIn className="header__iconSocial header__iconSocial--linkedin" />
-          </a>
+          </a> */}
         </div>
       </div>
 
