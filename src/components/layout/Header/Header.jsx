@@ -11,7 +11,7 @@ function Header() {
         <h1 className="header__h1">
           Ana Manuela<span className="header__h1Span"> Ramirez</span>
         </h1>
-        <h2 className="header__h2">Productora Audiovisual</h2>
+        <h2 className="header__h2">Realizadora Audiovisual</h2>
         <p className="header__p">
           "Esto se trata de mantener la creatividad en supervivencia, si dejas
           de crear, dejas de creer y por lo tanto de crecer"

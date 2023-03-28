@@ -6,9 +6,13 @@
   width: 100%;
   max-width: 1380px;
   margin: 0 auto;
-  height: 100vh;
+  height: 100%;
   background-color: vars.$background;
   color: vars.$only-white;
+
+  @include mixin.media() {
+    height: 100vh;
+  }
 
   &__nav {
     position: relative;
@@ -20,14 +24,14 @@
     @include mixin.media() {
       padding: 20px 10px;
     }
+
+    @include mixin.media(1025px) {
+      padding: 20px 140px;
+    }
   }
 
   &__logo {
     width: 110px;
-
-    @include mixin.media(1040px) {
-      margin-left: 150px;
-    }
   }
 
   &__span {
@@ -160,7 +164,7 @@
     margin: 40px auto 0 auto;
     @include mixin.flex(flex-start, flex-start, column);
     row-gap: 5px;
-    z-index: 2;
+    z-index: 1;
 
     @include mixin.media() {
       position: absolute;
@@ -199,11 +203,11 @@
 
   &__h1Span {
     font-size: inherit;
-    color: vars.$green-medium;
+    color: vars.$green-black;
     font-family: inherit;
 
     @include mixin.media() {
-      -webkit-text-stroke: 1px vars.$green-medium;
+      -webkit-text-stroke: 1px vars.$green-black;
     }
   }
 
@@ -228,7 +232,6 @@
       text-align: start;
       font-size: 1.6rem;
       letter-spacing: 0.1rem;
-      color: vars.$green-medium;
     }
   }
 
@@ -284,7 +287,7 @@
     width: 100%;
     padding: 10px;
     border: 2px solid vars.$only-white;
-    background-color: transparent;
+    background-color: #030c0b;
     font-size: 1.5rem;
     text-align: center;
     transition: 0.5s;
@@ -294,37 +297,27 @@
     -o-transition: 0.5s;
     overflow: hidden;
 
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      border: 1px solid vars.$green-black;
-      background-color: vars.$green-black;
-      transform: translateX(-100%);
-      transition: all 0.5s;
-      z-index: -1;
-      -webkit-transition: all 0.5s;
-      -moz-transition: all 0.5s;
-      -ms-transition: all 0.5s;
-      -o-transition: all 0.5s;
-    }
-
-    &:hover::before {
-      transform: translateX(0);
-    }
-
     @include mixin.media() {
       width: 300px;
       margin-top: 20px;
-
       font-size: 1.8rem;
       display: block;
       text-transform: uppercase;
       letter-spacing: 0.3rem;
     }
+
+    &:hover {
+      transform: translateY(-5px);
+      -webkit-transform: translateY(-5px);
+      -moz-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+      -o-transform: translateY(-5px);
+    }
+  }
+
+  &__downloadIcon {
+    opacity: 0;
+    visibility: hidden;
   }
 
   &__img {
@@ -336,9 +329,10 @@
     position: relative;
     order: 6;
     margin: 40px auto 0 auto;
-    width: 250px;
+    width: 50%;
     max-width: 250px;
     @include mixin.flex(space-between, center, row);
+    flex-wrap: wrap;
 
     @include mixin.media() {
       position: relative;
