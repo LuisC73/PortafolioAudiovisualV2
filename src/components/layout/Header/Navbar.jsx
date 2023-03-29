@@ -17,7 +17,7 @@ function Navbar() {
           />
         </li>
         <li className="header__li">
-          <a href="#" className="header__a">
+          <a href="about" className="header__a">
             Sobre Mí
           </a>
         </li>
@@ -27,7 +27,7 @@ function Navbar() {
           </a>
         </li>
         <li className="header__li">
-          <a href="#" className="header__a">
+          <a href="photos" className="header__a">
             Fotografías
           </a>
         </li>

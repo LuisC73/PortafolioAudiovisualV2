@@ -3,14 +3,15 @@
 
 .photos {
   width: 90%;
-  max-width: 1120px;
+  max-width: 1380px;
   margin: 40px auto 0 auto;
   @include mixin.flex(center, flex-start, column);
   text-align: start;
 
-  //   @include mixin.media() {
-  //     width: 1120px;
-  //   }
+  @include mixin.media() {
+    width: 100%;
+    padding: 50px;
+  }
 
   &__h3 {
     color: vars.$only-white;

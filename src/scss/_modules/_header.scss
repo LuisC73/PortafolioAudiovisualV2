@@ -26,7 +26,7 @@
     }
 
     @include mixin.media(1025px) {
-      padding: 20px 140px;
+      padding: 20px 50px;
     }
   }
 
@@ -169,7 +169,7 @@
     @include mixin.media() {
       position: absolute;
       top: calc(55% - 150px);
-      left: calc(20% - 130px);
+      left: 50px;
       width: max-content;
       height: 320px;
       margin: 0;
