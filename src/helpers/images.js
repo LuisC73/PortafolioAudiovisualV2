@@ -6,7 +6,7 @@ const images = {
   photoImg3: "https://i.postimg.cc/VkbRk4Hs/img3.jpg",
   photoImg4: "https://i.postimg.cc/Jn7ZZQKk/g4.jpg",
   photoImg5: "https://i.postimg.cc/SK6w1c8d/g6.jpg",
-  backgroundAbout: "https://i.postimg.cc/tgRM2pfT/background-About.jpg",
+  backgroundAbout: "https://i.postimg.cc/vBzGHkHj/bgAbout.jpg",
 };
 
 export default images;
