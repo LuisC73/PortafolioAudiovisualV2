@@ -1,3 +1,4 @@
+import ContactContent from "../../common/contact/contactContent";
 import PhotoContent from "../../common/photographs/photoContent";
 import VideosContent from "../../common/videos/videosContent";
 import AboutContent from "../About/AboutContent";
@@ -12,6 +13,7 @@ function MainLayout() {
         <AboutContent />
         <PhotoContent />
         {/* <VideosContent /> */}
+        <ContactContent />
       </main>
       <Footer />
     </>
