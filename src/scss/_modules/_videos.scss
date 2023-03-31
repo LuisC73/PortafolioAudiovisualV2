@@ -1,0 +1,35 @@
+@use "../_layout/vars" as vars;
+@use "../_layout/mixins" as mixin;
+
+.videosContent {
+  width: 90%;
+  max-width: 1380px;
+  margin: 40px auto 0 auto;
+  @include mixin.flex(center, flex-start, column);
+  text-align: start;
+  color: vars.$only-white;
+
+  @include mixin.media() {
+    width: 100%;
+    padding: 50px;
+  }
+
+  &__h3 {
+    color: vars.$only-white;
+    font-size: 3rem;
+    font-family: "Futura-Light";
+    text-transform: uppercase;
+    text-align: start;
+    letter-spacing: 0.2rem;
+
+    @include mixin.media() {
+      font-size: 5rem;
+    }
+  }
+
+  &__span {
+    font-size: inherit;
+    font-family: inherit;
+    color: vars.$green-black;
+  }
+}
