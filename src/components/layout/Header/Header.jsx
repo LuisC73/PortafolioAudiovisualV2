@@ -1,4 +1,4 @@
-import { FaYoutube, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaYoutube, FaInstagram } from "react-icons/fa";
 import images from "../../../helpers/images";
 import Navbar from "./Navbar";
 
@@ -6,7 +6,6 @@ function Header() {
   return (
     <header className="header">
       <Navbar />
-
       <div className="header__info">
         <h1 className="header__h1">
           Ana Manuela<span className="header__h1Span"> Ramirez</span>
@@ -37,9 +36,6 @@ function Header() {
           >
             <FaInstagram className="header__iconSocial header__iconSocial--instagram" />
           </a>
-          {/* <a href="#" className="header__link">
-            <FaLinkedinIn className="header__iconSocial header__iconSocial--linkedin" />
-          </a> */}
         </div>
       </div>
 

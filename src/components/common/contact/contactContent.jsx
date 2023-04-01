@@ -1,4 +1,5 @@
 import images from "../../../helpers/images";
+import ContactForm from "./contactForm";
 
 function ContactContent() {
   return (
@@ -13,37 +14,8 @@ function ContactContent() {
             alt="Paisaje"
             className="contactContent__img"
           />
-          <img
-            src={images.Me}
-            alt="Ana Manuela Ramirez"
-            className="contactContent__face"
-          />
         </figure>
-        <form className="contactContent__form">
-          <input
-            type="text"
-            placeholder="Nombre"
-            autoComplete="name"
-            className="contactContent__input"
-          />
-          <input
-            type="email"
-            placeholder="Correo"
-            autoComplete="email"
-            className="contactContent__input"
-          />
-          <textarea
-            cols="30"
-            rows="10"
-            placeholder="Mensaje"
-            className="contactContent__input"
-          ></textarea>
-          <input
-            type="submit"
-            value="Enviar"
-            className="contactContent__submit"
-          />
-        </form>
+        <ContactForm />
       </div>
     </section>
   );

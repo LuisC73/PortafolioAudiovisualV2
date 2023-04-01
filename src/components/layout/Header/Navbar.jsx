@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaTimes, FaMoon } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 import { HiMenuAlt3 } from "react-icons/hi";
 import images from "../../../helpers/images";
 
@@ -43,7 +43,6 @@ function Navbar() {
       >
         <HiMenuAlt3 className="header__openIcon" />
       </button>
-      <FaMoon className="header__decorate" />
     </nav>
   );
 }
