@@ -1,0 +1,93 @@
+@use "../_layout/vars" as vars;
+@use "../_layout/mixins" as mixin;
+
+$skillLenght: 0%;
+
+.skillsContent {
+  width: 90%;
+  max-width: 1380px;
+  margin: 40px auto 0 auto;
+  @include mixin.flex(center, flex-start, column);
+  text-align: start;
+  color: vars.$only-white;
+
+  @include mixin.media() {
+    width: 100%;
+    padding: 50px;
+  }
+
+  &__h3 {
+    color: vars.$only-white;
+    font-size: 3rem;
+    font-family: vars.$fontFamilyTitles;
+    text-transform: uppercase;
+    text-align: start;
+    letter-spacing: 0.2rem;
+
+    @include mixin.media() {
+      font-size: 5rem;
+    }
+  }
+
+  &__span {
+    font-size: inherit;
+    font-family: inherit;
+    color: vars.$green-black;
+  }
+
+  &__wrapper {
+    width: 100%;
+    @include mixin.grid(2, 1fr, 20px);
+  }
+
+  &__column {
+    margin-top: 40px;
+    @include mixin.flex(flex-start, flex-start, column);
+    row-gap: 30px;
+  }
+
+  &__skills {
+    width: 100%;
+    @include mixin.flex(space-between, center, row);
+  }
+
+  &__p {
+    font-size: 1.6rem;
+  }
+
+  &__bar {
+    position: relative;
+    width: 285px;
+    height: 8px;
+    background-color: #888;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    overflow: hidden;
+  }
+
+  &__progress {
+    position: absolute;
+    left: -285px;
+    width: 0%;
+    height: 100%;
+    background-color: vars.$green-black;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: color 0.1s, background-color 0.2s ease-in-out,
+      left 1s ease-in-out;
+    -webkit-transition: color 0.1s, background-color 0.2s ease-in-out,
+      left 1s ease-in-out;
+    -moz-transition: color 0.1s, background-color 0.2s ease-in-out,
+      left 1s ease-in-out;
+    -ms-transition: color 0.1s, background-color 0.2s ease-in-out,
+      left 1s ease-in-out;
+    -o-transition: color 0.1s, background-color 0.2s ease-in-out,
+      left 1s ease-in-out;
+  }
+}

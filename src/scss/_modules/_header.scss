@@ -171,7 +171,7 @@
       top: calc(55% - 150px);
       left: 50px;
       width: max-content;
-      height: 320px;
+      height: 340px;
       margin: 0;
       row-gap: 10px;
       z-index: 2;
@@ -191,7 +191,7 @@
     font-size: 2.2rem;
     text-transform: uppercase;
     color: vars.$only-white;
-    font-family: "Futura-Light";
+    font-family: vars.$fontFamilyTitles;
 
     @include mixin.media() {
       display: block;
@@ -204,7 +204,7 @@
   &__h1Span {
     font-size: inherit;
     color: vars.$green-black;
-    font-family: inherit;
+    font-family: vars.$fontFamilyTitles;
 
     @include mixin.media() {
       -webkit-text-stroke: 1px vars.$green-black;
@@ -215,7 +215,7 @@
     order: 1;
     font-size: 1.8rem;
     color: vars.$green-black;
-    font-family: "Futura-Medium";
+    font-family: vars.$fontFamilyTitles;
 
     @include mixin.media() {
       font-size: 2rem;

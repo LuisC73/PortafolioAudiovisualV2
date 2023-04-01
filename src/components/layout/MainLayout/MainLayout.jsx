@@ -1,5 +1,6 @@
 import ContactContent from "../../common/contact/contactContent";
 import PhotoContent from "../../common/photographs/photoContent";
+import SkillContent from "../../common/skills/skillsContent";
 import VideosContent from "../../common/videos/videosContent";
 import AboutContent from "../About/AboutContent";
 import Footer from "../Footer/Footer";
@@ -11,6 +12,7 @@ function MainLayout() {
       <Header />
       <main className="main">
         <AboutContent />
+        <SkillContent />
         <PhotoContent />
         {/* <VideosContent /> */}
         <ContactContent />

@@ -15,7 +15,7 @@
   &__h3 {
     color: vars.$only-white;
     font-size: 3rem;
-    font-family: "Futura-Light";
+    font-family: vars.$fontFamilyTitles;
     text-transform: uppercase;
     text-align: start;
     letter-spacing: 0.2rem;
@@ -79,7 +79,7 @@
     border: 1px solid vars.$only-white;
     outline: none;
     color: vars.$only-white;
-    font-family: "Futura-Light";
+    font-family: vars.$fontFamilyText;
     resize: none;
   }
 
@@ -119,7 +119,7 @@
     position: relative;
     top: 20px;
     font-size: 1.6rem;
-    font-family: "Futura-Light";
+    font-family: vars.$fontFamilyText;
     color: #de0000;
     font-weight: bold;
     letter-spacing: 0.1rem;

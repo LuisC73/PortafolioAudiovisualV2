@@ -1,22 +1,9 @@
-@font-face {
-  font-family: "Futura-Light";
-  src: url("../../../public/fonts/futura\ light\ bt.ttf");
-}
-
-@font-face {
-  font-family: "Futura-Medium";
-  src: url("../../../public/fonts/Futura\ Book\ font.ttf");
-}
-
-@font-face {
-  font-family: "Futura-Bold";
-  src: url("../../../public/fonts/Futura\ Heavy\ font.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&family=Poiret+One&display=swap");
 
 $only-white: #fff;
 $only-black: #000;
-$fontFamilyText: "Futura-Light";
-$fontFamilyTitles: "Futura-Bold";
+$fontFamilyText: "Montserrat", sans-serif;
+$fontFamilyTitles: "Poiret One", cursive;
 $only-gray: #5b5b5b;
 $gray-hover: #b2b2b2;
 $off-black: #333333;
@@ -25,3 +12,5 @@ $background: #050505;
 $green-medium: #609966;
 $green-black: #1c6758;
 $green-pant: #030c0b;
+
+$skillLenght: 0%;
