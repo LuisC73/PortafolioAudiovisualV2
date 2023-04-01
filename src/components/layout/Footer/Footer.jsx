@@ -29,11 +29,7 @@ function Footer() {
         </p>
       </div>
       <figure className="footer__col">
-        <img
-          src="https://i.postimg.cc/MKtkMQfW/LogoAM.png"
-          alt="Logo"
-          className="footer__img"
-        />
+        <img src={images.logoBlack} alt="Logo" className="footer__img" />
       </figure>
     </footer>
   );
