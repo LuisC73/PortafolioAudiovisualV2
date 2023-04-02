@@ -7,7 +7,7 @@ import images from "../../../helpers/images";
 
 function SkillContent() {
   return (
-    <section className="skillsContent">
+    <section className="skillsContent" id="skills">
       <h3 className="skillsContent__h3">
         Habili<span className="skillsContent__span">dades</span>{" "}
       </h3>

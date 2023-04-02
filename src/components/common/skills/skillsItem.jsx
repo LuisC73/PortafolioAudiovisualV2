@@ -16,7 +16,9 @@ function SkillsItem({ ability, bar }) {
     <div className="skillsContent__skills">
       <p className="skillsContent__p">{ability}</p>
       <div className="skillsContent__bar">
-        <div className="skillsContent__progress" style={styleBar}></div>
+        <div className="skillsContent__progress" style={styleBar}>
+          {bar}%
+        </div>
       </div>
     </div>
   );

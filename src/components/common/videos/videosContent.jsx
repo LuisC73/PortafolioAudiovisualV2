@@ -3,7 +3,7 @@ import VideoItem from "./videosItem";
 
 function VideosContent() {
   return (
-    <section className="videosContent">
+    <section className="videosContent" id="videos">
       <h3 className="videosContent__h3">
         Vid<span className="videosContent__span">eos</span>
       </h3>

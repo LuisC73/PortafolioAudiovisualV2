@@ -6,6 +6,7 @@ function Header() {
   return (
     <header className="header">
       <Navbar />
+      <img src={images.logo} alt="Logo" className="header__logo" />
       <div className="header__info">
         <h1 className="header__h1">
           Ana Manuela<span className="header__h1Span"> Ramirez</span>

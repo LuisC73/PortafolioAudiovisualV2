@@ -85,6 +85,7 @@ $skillLenght: 0%;
 
     @include mixin.media() {
       width: 285px;
+      height: 10px;
     }
   }
 
@@ -93,6 +94,9 @@ $skillLenght: 0%;
     left: -165px;
     width: 0%;
     height: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    color: transparent;
     background-color: vars.$green-black;
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -112,6 +116,10 @@ $skillLenght: 0%;
 
     @include mixin.media() {
       left: -285px;
+    }
+
+    &:hover {
+      color: vars.$only-white;
     }
   }
 
@@ -180,8 +188,13 @@ $skillLenght: 0%;
   }
 
   &__icon {
+    width: fit-content;
     font-size: 2.5rem;
     color: vars.$only-white;
+
+    &:hover {
+      animation: vibrate-1 0.3s linear infinite both;
+    }
   }
 
   &__stars {
@@ -208,5 +221,32 @@ $skillLenght: 0%;
       -o-transform: scale(1.1) translateY(-5px);
       color: vars.$green-black;
     }
+  }
+}
+
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
   }
 }
