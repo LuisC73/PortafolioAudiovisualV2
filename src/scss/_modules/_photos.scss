@@ -39,18 +39,87 @@
   }
 
   &__figure {
+    position: relative;
     width: 100%;
     height: 100%;
+    margin-bottom: 1rem;
     border-radius: 7px;
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
     overflow: hidden;
+    cursor: pointer;
+    transition: all 350ms ease;
+
+    &:hover {
+      filter: opacity(0.5);
+
+      img {
+        transform: rotate(10deg) scale(1.3);
+      }
+    }
   }
 
   &__img {
     width: 100%;
     height: 100%;
+    transition: 0.5s;
+  }
+
+  &__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    @include mixin.flex(center, center, row);
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    backdrop-filter: blur(7px);
+    transition: opacity 0.4s ease, visibility 0.4s ease,
+      transform 0.5s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    z-index: 6;
+
+    & img {
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      max-height: 100%;
+      border-radius: 5px;
+      transition: 0.5s ease-in-out;
+    }
+
+    &--open {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: vars.$only-white;
+    cursor: pointer;
+    width: fit-content;
+    font-size: 2rem;
+    transition: 0.5s;
+
+    &:hover {
+      color: vars.$green-black;
+    }
+  }
+
+  &__des {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 4;
+    font-size: 1.4rem;
+    color: vars.$only-white;
+    transition: 0.5s;
   }
 }

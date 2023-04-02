@@ -9,7 +9,12 @@ function PhotoContent() {
       </h3>
       <div className="photos__wrapper">
         {photosInfo.map((photo, i) => (
-          <PhotoItem key={i} imgSrc={photo.imgSrc} link={photo.imgDownload} />
+          <PhotoItem
+            key={i}
+            imgSrc={photo.imgSrc}
+            link={photo.imgDownload}
+            description={photo.description}
+          />
         ))}
       </div>
     </section>
