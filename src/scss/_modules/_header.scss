@@ -106,7 +106,7 @@
     width: 80%;
     height: 100vh;
     padding: 45px 50px 0 50px;
-    @include mixin.flex(center, flex-start, column);
+    @include mixin.flex(center, flex-end, column);
     row-gap: 40px;
     background-color: vars.$green-pant;
     transform: translateX(100%);
@@ -133,6 +133,7 @@
 
     @include mixin.media() {
       width: 420px;
+      @include mixin.flex(center, flex-start, column);
     }
   }
 
