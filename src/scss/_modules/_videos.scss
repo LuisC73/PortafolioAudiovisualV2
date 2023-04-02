@@ -36,52 +36,73 @@
   &__wrapper {
     width: 100%;
     height: 100%;
-    margin-top: 30px;
+    margin-top: 50px;
+    @include mixin.grid(1, 1fr, 40px);
+
+    @include mixin.media() {
+      @include mixin.grid(2, 1fr, 10px);
+    }
   }
 
   &__card {
-    width: 400px;
-    height: 400px;
+    position: relative;
+    width: 100%;
+    height: max-content;
     margin: 0 auto;
-
-    @include mixin.flex(flex-start, flex-start, column);
-    align-items: center;
+    @include mixin.grid(1, 1fr, 10px);
     background-color: vars.$backgroundCard;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
+    border-radius: vars.$borderRadius;
+    overflow: hidden;
 
     @include mixin.media() {
-      height: 500px;
-    }
-    @include mixin.media() {
-      height: 500px;
+      width: 95%;
+      @include mixin.grid(2, 1fr, 10px);
+      height: 280px;
+
+      &:nth-child(2n) {
+        margin-top: 80px;
+      }
     }
   }
 
   &__info {
     width: 100%;
-    height: 200px;
-    @include mixin.flex(center, flex-start, column);
-    row-gap: 40px;
-    padding: 20px;
+    height: 100%;
+    padding: 20px 8px;
+    @include mixin.flex(space-between, flex-start, column);
+    background-color: inherit;
+    z-index: 2;
+    gap: 30px;
+
+    @include mixin.media() {
+      gap: 0;
+    }
+  }
+
+  &__buttons {
+    @include mixin.flex(center, center, row);
+    column-gap: 10px;
+  }
+
+  &__top {
+    @include mixin.flex(flex-start, flex-start, column);
+    row-gap: 10px;
   }
 
   &__h4 {
-    width: 80%;
-    font-size: 1.8rem;
-    text-align: start;
-    font-weight: 700;
-    letter-spacing: 0.2rem;
+    font-size: 2.3rem;
     color: vars.$green-black;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+  }
 
-    @include mixin.media() {
-      width: 100%;
-      font-size: 2.8rem;
-      text-align: start;
-    }
+  &__data {
+    @include mixin.flex(center, center, row);
+    gap: 20px;
+  }
+
+  &__dt {
+    font-size: 1.2rem;
   }
 
   &__p {
@@ -92,14 +113,36 @@
     }
   }
 
+  &__download {
+    padding: 8px 10px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    color: vars.$only-white;
+    background-color: vars.$green-pant;
+  }
+
+  &__button {
+    color: vars.$only-white;
+    font-size: 1.5rem;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    @include mixin.flex(center, center, row);
+    border: 1px solid vars.$green-black;
+    border-radius: 50%;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: vars.$green-black;
+    }
+  }
+
   &__video {
     width: 100%;
-    height: 320px;
-    border-radius: 8px 8px 0 0;
-    -webkit-border-radius: 8px 8px 0 0;
-    -moz-border-radius: 8px 8px 0 0;
-    -ms-border-radius: 8px 8px 0 0;
-    -o-border-radius: 8px 8px 0 0;
+    height: 100%;
+    border-radius: 7px 0 0 7px;
     overflow: hidden;
   }
 }
