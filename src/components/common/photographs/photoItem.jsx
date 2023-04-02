@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import images from "../../../helpers/images";
 
-function PhotoItem({ i, imgSrc, url, description }) {
+function PhotoItem({ i, imgSrc, description }) {
   const [modal, setModal] = useState(false);
   const [tempImg, setTempImg] = useState("");
 

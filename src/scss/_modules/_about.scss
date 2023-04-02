@@ -107,4 +107,26 @@
       }
     }
   }
+
+  &__text {
+    position: relative;
+    bottom: 20px;
+    width: 100%;
+    text-align: start;
+    font-size: 1.7rem;
+    line-height: 3rem;
+    color: vars.$green-black;
+
+    @include mixin.media() {
+      position: absolute;
+      left: 40px;
+      bottom: 40px;
+      width: 400px;
+      text-align: start;
+      margin-top: 40px;
+      font-size: 1.8rem;
+      line-height: 3rem;
+      color: vars.$green-black;
+    }
+  }
 }

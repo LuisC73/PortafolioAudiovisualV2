@@ -25,11 +25,13 @@ function AboutContent() {
             programas profesionales de la suite de Adobe. Trabajé también con el
             equipo de logística 4E realizando la producción fotográfica para el
             Ministerio de Educación en un evento deportivo Nacional (Juegos
-            Deportivos Nacionales del Magisterio 2022). A la hora de producir
-            ideas audiovisuales, es importante para mí apropiarme de ellas y
-            sentir primero lo que quiero transmitir.
+            Deportivos Nacionales del Magisterio 2022).
           </p>
         </article>
+        <p className="aboutContent__text">
+          "A la hora de producir ideas audiovisuales, es importante para mí
+          apropiarme de ellas y sentir primero lo que quiero transmitir."
+        </p>
       </div>
     </section>
   );

@@ -12,7 +12,6 @@ function PhotoContent() {
           <PhotoItem
             key={i}
             imgSrc={photo.imgSrc}
-            link={photo.imgDownload}
             description={photo.description}
           />
         ))}
