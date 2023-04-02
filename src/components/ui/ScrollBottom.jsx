@@ -6,9 +6,9 @@ function ScrollBottom() {
     });
   };
   return (
-    <div class="scrollBottom" onClick={scrollToBottom}>
-      <span class="scrollBottom__btn">
-        <span class="scrollBottom__icon"></span>
+    <div className="scrollBottom" onClick={scrollToBottom}>
+      <span className="scrollBottom__btn">
+        <span className="scrollBottom__icon"></span>
       </span>
     </div>
   );
