@@ -1,18 +1,25 @@
 import images from "../../../helpers/images";
 import videos from "../../../helpers/videos";
+import { DefaultPlayer as Video } from "react-html5video";
+import "react-html5video/dist/styles.css";
+
 import React from "react";
+import ReactPlayer from "react-player";
 
-
-function VideosItem({ title, videoURL, posterVideo }) {
+function VideosItem({ title, videoURL, posterVideo, description }) {
   return (
-    <div>
-      <video controls className="videosSection__video" loading="lazy">
-        <source
-          src="https://drive.google.com/file/d/1C8PzN1oyBlQ_Nd57NJMt1B8b4aeKGOA5/view?usp=share_link"
-          type="video/webm"
-        />
-      </video>
-      {/* */}
+    <div className="videosContent__card">
+      <ReactPlayer
+        url={videoURL}
+        controls
+        width="100%"
+        height="420px"
+        className="videosContent__video"
+      />
+      <div className="videosContent__info">
+        <h4 className="videosContent__h4">{title}</h4>
+        <p className="videosContent__p">{description}</p>
+      </div>
     </div>
   );
 }

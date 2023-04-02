@@ -14,7 +14,7 @@ function MainLayout() {
         <AboutContent />
         <SkillContent />
         <PhotoContent />
-        {/* <VideosContent /> */}
+        <VideosContent />
         <ContactContent />
       </main>
       <Footer />
