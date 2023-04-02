@@ -31,7 +31,7 @@ function SkillContent() {
     if (!inView) {
       animation.start({
         opacity: 0,
-        x: 50,
+        x: -50,
       });
     }
   }, [inView]);
