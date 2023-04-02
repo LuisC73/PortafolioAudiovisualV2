@@ -12,13 +12,6 @@ function VideosItem({ title, videoURL, posterVideo, description }) {
         poster={images[posterVideo]}
       >
         <source src={videos[videoURL]} type="video/mp4" />
-        <track
-          label="English"
-          kind="subtitles"
-          srcLang="en"
-          src="http://source.vtt"
-          default
-        />
       </Video>
       <div className="videosContent__info">
         <h4 className="videosContent__h4">{title}</h4>

@@ -18,7 +18,7 @@ function VideosContent() {
           loop={true}
           navigation={true}
           modules={[Navigation]}
-          className="mySwiper"
+          className="videosContent__swipper"
           breakpoints={{
             640: {
               slidesPerView: 1,

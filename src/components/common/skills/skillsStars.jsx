@@ -10,7 +10,7 @@ import {
 
 import { FaStar } from "react-icons/fa";
 
-function SkillsStars({ text, icon, stars }) {
+function SkillsStars({ text, stars }) {
   const iconMapping = {
     Illustration: <SiAdobeillustrator className="skillsContent__icon" />,
     Photoshop: <SiAdobephotoshop className="skillsContent__icon" />,
@@ -35,7 +35,7 @@ function SkillsStars({ text, icon, stars }) {
       </div>
       <div className="skillsContent__stars">
         {starsCount.map((_, i) => (
-          <FaStar className="skillsContent__start" />
+          <FaStar className="skillsContent__start" key={i} />
         ))}
       </div>
     </div>
