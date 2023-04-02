@@ -1,0 +1,50 @@
+@use "../_layout/vars" as vars;
+@use "../_layout/mixins" as mixin;
+
+.scrollBottom {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  cursor: pointer;
+  display: none;
+
+  @include mixin.media() {
+    display: block;
+  }
+
+  &__btn {
+    margin: 10px auto;
+    width: 20px;
+    height: 30px;
+    border: 3px solid rgba(122, 122, 124, 0.918);
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+  }
+
+  &__icon {
+    display: block;
+    width: 5px;
+    height: 8px;
+    background: linear-gradient(
+      170deg,
+      rgba(122, 122, 124, 0.918),
+      rgb(123, 124, 124)
+    );
+    border-radius: 50%;
+    margin: auto;
+    animation: scrolling13 1s linear infinite;
+  }
+}
+
+@keyframes scrolling13 {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+}

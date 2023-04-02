@@ -1,6 +1,7 @@
 import { FaYoutube, FaInstagram } from "react-icons/fa";
 import images from "../../../helpers/images";
 import Navbar from "./Navbar";
+import ScrollBottom from "../../ui/ScrollBottom";
 
 function Header() {
   return (
@@ -43,6 +44,8 @@ function Header() {
       <figure className="header__imgContent">
         <img src={images.Me} alt="Me" className="header__img" />
       </figure>
+
+      <ScrollBottom />
     </header>
   );
 }
