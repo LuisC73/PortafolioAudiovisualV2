@@ -43,7 +43,12 @@ function VideosItem({
           >
             Descargar
           </a>
-          <a href={youtube} className="videosContent__button" target="_blank">
+          <a
+            href={youtube}
+            className="videosContent__button"
+            target="_blank"
+            aria-label="Youtube"
+          >
             <FaYoutube className="videosContent__icon" />
           </a>
         </div>

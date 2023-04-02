@@ -17,11 +17,11 @@ function Footer() {
       <div className="footer__col">
         <p className="footer__p footer__p--title">Redes sociales</p>
         <div className="footer__social">
-          <a href="#" className="footer__a">
+          <a href="#" className="footer__a" aria-label="Youtube">
             <FaYoutube className="footer__icon" />
           </a>
           <a href="#">
-            <FaInstagram className="footer__icon" />
+            <FaInstagram className="footer__icon" aria-label="Instagram" />
           </a>
         </div>
         <p className="footer__p footer__p--color">

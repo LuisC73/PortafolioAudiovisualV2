@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaTimes } from "react-icons/fa";
 import { HiMenuAlt3 } from "react-icons/hi";
 import images from "../../../helpers/images";
+import { motion } from "framer-motion";
 
 function Navbar() {
   const [menuActive, setMenuActive] = useState(false);
@@ -17,8 +18,27 @@ function Navbar() {
 
   window.addEventListener("scroll", showMenu);
 
+  const navAnimation = {
+    hidden: {
+      opacity: 0,
+    },
+    show: {
+      opacity: 1,
+      transition: {
+        duration: 0.4,
+        delay: 0.8,
+        ease: "easeInOut",
+      },
+    },
+  };
+
   return (
-    <nav className={navbar ? "header__nav header__nav--active" : "header__nav"}>
+    <motion.nav
+      className={navbar ? "header__nav header__nav--active" : "header__nav"}
+      variants={navAnimation}
+      initial="hidden"
+      animate="show"
+    >
       <ul className={`header__ul ${menuActive ? "header__ul--active" : ""}`}>
         <li className="header__close">
           <FaTimes
@@ -60,10 +80,11 @@ function Navbar() {
           navbar ? "header__button header__button--active" : "header__button"
         }
         onClick={() => setMenuActive(!menuActive)}
+        aria-label="Boton para abrir menu"
       >
         <HiMenuAlt3 className="header__openIcon" />
       </button>
-    </nav>
+    </motion.nav>
   );
 }
 

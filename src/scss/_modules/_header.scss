@@ -110,11 +110,7 @@
     row-gap: 40px;
     background-color: vars.$green-pant;
     transform: translateX(100%);
-    transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.7s ease-in-out;
     z-index: 5;
     opacity: 0;
     visibility: hidden;
@@ -292,6 +288,7 @@
     font-size: 1.8rem;
     color: vars.$green-black;
     font-family: vars.$fontFamilyTitles;
+    font-weight: bold;
 
     @include mixin.media() {
       font-size: 2rem;
@@ -306,7 +303,6 @@
     @include mixin.media() {
       width: 350px;
       text-align: start;
-      font-size: 1.6rem;
       letter-spacing: 0.1rem;
     }
   }
