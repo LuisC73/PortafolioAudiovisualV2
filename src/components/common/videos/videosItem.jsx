@@ -1,8 +1,3 @@
-import images from "../../../helpers/images";
-import videos from "../../../helpers/videos";
-import { DefaultPlayer as Video } from "react-html5video";
-import "react-html5video/dist/styles.css";
-
 import React from "react";
 import ReactPlayer from "react-player";
 
