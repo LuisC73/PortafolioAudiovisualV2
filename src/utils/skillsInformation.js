@@ -1,7 +1,7 @@
 const skillsInfo = [
   {
     ability: "Fotografía digital",
-    bar: 90,
+    bar: 70,
   },
   {
     ability: "Edición de video",
@@ -9,7 +9,7 @@ const skillsInfo = [
   },
   {
     ability: "Animación",
-    bar: 60,
+    bar: 50,
   },
   {
     ability: "Diseño gráfico",

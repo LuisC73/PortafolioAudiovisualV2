@@ -21,11 +21,7 @@ const programsInfo = [
   },
   {
     text: "Lightroom",
-    stars: 4,
-  },
-  {
-    text: "Audition",
-    stars: 4,
+    stars: 3,
   },
 ];
 
