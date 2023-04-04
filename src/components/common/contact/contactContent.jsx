@@ -8,13 +8,6 @@ function ContactContent() {
         Cont<span className="contactContent__span">acto</span>
       </h3>
       <div className="contactContent__wrapper">
-        <figure className="contactContent__figure">
-          <img
-            src={images.photoImg4}
-            alt="Paisaje"
-            className="contactContent__img"
-          />
-        </figure>
         <ContactForm />
       </div>
     </section>

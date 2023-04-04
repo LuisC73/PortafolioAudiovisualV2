@@ -65,8 +65,8 @@ function AboutContent() {
           </p>
         </motion.article>
         <motion.p className="aboutContent__text" animate={animation}>
-          "A la hora de producir ideas audiovisuales, es importante para mí
-          apropiarme de ellas y sentir primero lo que quiero transmitir."
+          A la hora de producir ideas audiovisuales, es importante para mí
+          apropiarme de ellas y sentir primero lo que quiero transmitir.
         </motion.p>
       </div>
     </section>

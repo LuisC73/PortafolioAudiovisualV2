@@ -13,7 +13,7 @@
   z-index: 6;
 
   &__item {
-    width: 380px;
+    width: 85%;
     height: 200px;
     background: vars.$only-white;
     border-radius: vars.$borderRadius;
@@ -25,7 +25,7 @@
     gap: 20px;
 
     @include mixin.media() {
-      width: 85%;
+      width: 380px;
     }
   }
 

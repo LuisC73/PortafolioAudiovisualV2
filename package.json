@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "formik": "^2.2.9",
     "framer-motion": "^10.10.0",
     "prop-types": "^15.8.1",
