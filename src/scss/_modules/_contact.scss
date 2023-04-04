@@ -81,6 +81,10 @@
     color: vars.$only-white;
     font-family: vars.$fontFamilyText;
     resize: none;
+
+    &--error {
+      border: 1px solid red;
+    }
   }
 
   &__submit {

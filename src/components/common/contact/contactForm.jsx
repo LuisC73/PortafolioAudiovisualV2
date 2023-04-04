@@ -36,21 +36,24 @@ function ContactForm() {
         type="text"
         placeholder="Nombre"
         autoComplete="name"
-        className="contactContent__input"
+        className={
+          errors.fullname
+            ? "contactContent__input contactContent__input--error"
+            : "contactContent__input"
+        }
         name="fullname"
         value={values.fullname}
         onChange={handleChange}
       />
-      {errors.email && (
-        <label className="contactContent__error" htmlFor="email">
-          Email Invalido
-        </label>
-      )}
       <input
         type="email"
         placeholder="Correo"
         autoComplete="email"
-        className="contactContent__input"
+        className={
+          errors.email
+            ? "contactContent__input contactContent__input--error"
+            : "contactContent__input"
+        }
         name="email"
         value={values.email}
         onChange={handleChange}
@@ -59,7 +62,11 @@ function ContactForm() {
         cols="30"
         rows="10"
         placeholder="Mensaje"
-        className="contactContent__input"
+        className={
+          errors.message
+            ? "contactContent__input contactContent__input--error"
+            : "contactContent__input"
+        }
         name="message"
         value={values.message}
         onChange={handleChange}
