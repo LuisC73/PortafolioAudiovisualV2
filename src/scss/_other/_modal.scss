@@ -1,0 +1,65 @@
+@use "../_layout/vars" as vars;
+@use "../_layout/mixins" as mixin;
+
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  @include mixin.flex(center, center, column);
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  z-index: 6;
+
+  &__item {
+    width: 380px;
+    height: 200px;
+    background: vars.$only-white;
+    border-radius: vars.$borderRadius;
+    position: relative;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px;
+    @include mixin.flex(center, center, column);
+    text-align: center;
+    gap: 20px;
+
+    @include mixin.media() {
+      width: 85%;
+    }
+  }
+
+  &__icon {
+    color: green;
+    font-size: 6rem;
+  }
+
+  &__h4 {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 4px;
+  }
+
+  &__p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+
+  &__close {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: fit-content;
+    padding: 4px;
+    border-radius: vars.$borderRadius;
+    color: vars.$only-black;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: transparent;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
