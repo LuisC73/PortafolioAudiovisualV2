@@ -31,6 +31,10 @@ $skillLenght: 0%;
     @include mixin.media() {
       font-size: 5rem;
     }
+
+    @include mixin.mediaTv() {
+      font-size: 5.2rem;
+    }
   }
 
   &__span {
@@ -72,6 +76,10 @@ $skillLenght: 0%;
 
     @include mixin.media() {
       font-size: 1.6rem;
+    }
+
+    @include mixin.mediaTv() {
+      font-size: 1.8rem;
     }
   }
 
@@ -189,6 +197,10 @@ $skillLenght: 0%;
     font-weight: 500;
     text-align: center;
     letter-spacing: 0.1rem;
+
+    @include mixin.mediaTv() {
+      font-size: 1.8rem;
+    }
   }
 
   &__icon {
@@ -224,6 +236,10 @@ $skillLenght: 0%;
       -ms-transform: scale(1.1) translateY(-5px);
       -o-transform: scale(1.1) translateY(-5px);
       color: vars.$green-black;
+    }
+
+    @include mixin.mediaTv() {
+      font-size: 1.8rem;
     }
   }
 }

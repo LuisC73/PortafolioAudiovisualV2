@@ -28,6 +28,10 @@
     @include mixin.media() {
       font-size: 5rem;
     }
+
+    @include mixin.mediaTv() {
+      font-size: 5.2rem;
+    }
   }
 
   &__span {

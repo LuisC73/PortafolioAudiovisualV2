@@ -96,6 +96,10 @@
         text-align: end;
       }
     }
+
+    @include mixin.mediaTv() {
+      font-size: 5.2rem;
+    }
   }
 
   &__span {
@@ -124,6 +128,10 @@
         text-align: end;
       }
     }
+
+    @include mixin.mediaTv() {
+      font-size: 2rem;
+    }
   }
 
   &__text {
@@ -145,6 +153,10 @@
       font-size: 1.8rem;
       line-height: 3rem;
       color: vars.$green-black;
+    }
+
+    @include mixin.mediaTv() {
+      font-size: 2rem;
     }
   }
 }

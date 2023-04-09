@@ -29,6 +29,10 @@
     @include mixin.media() {
       font-size: 5rem;
     }
+
+    @include mixin.mediaTv() {
+      font-size: 5.2rem;
+    }
   }
 
   &__span {
@@ -98,6 +102,10 @@
     color: vars.$green-black;
     font-weight: 700;
     letter-spacing: 0.1rem;
+
+    @include mixin.mediaTv() {
+      font-size: 2.5rem;
+    }
   }
 
   &__data {
@@ -107,13 +115,24 @@
 
   &__dt {
     font-size: 1.2rem;
+    line-height: 1.4rem;
+
+    @include mixin.mediaTv() {
+      font-size: 1.5rem;
+    }
   }
 
   &__p {
     font-size: 1.3rem;
+    line-height: 2rem;
 
     @include mixin.media() {
       font-size: 1.5rem;
+    }
+
+    @include mixin.mediaTv() {
+      font-size: 1.6rem;
+      line-height: 2.3rem;
     }
   }
 

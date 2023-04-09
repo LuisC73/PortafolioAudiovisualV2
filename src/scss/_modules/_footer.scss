@@ -20,18 +20,31 @@
     gap: 10px;
     font-size: 1.4rem;
     text-align: center;
+    text-transform: capitalize;
 
     @include mixin.media() {
       text-align: start;
     }
 
+    @include mixin.mediaTv() {
+      font-size: 1.6rem;
+    }
+
     &--title {
       font-size: 2rem;
+
+      @include mixin.mediaTv() {
+        font-size: 2.4rem;
+      }
     }
 
     &--color {
       font-size: 1.2rem;
       color: vars.$only-gray;
+
+      @include mixin.mediaTv() {
+        font-size: 1.4rem;
+      }
     }
   }
 

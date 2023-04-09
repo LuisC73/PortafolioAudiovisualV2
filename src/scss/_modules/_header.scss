@@ -141,6 +141,10 @@
       width: 420px;
       @include mixin.flex(center, flex-start, column);
     }
+
+    @include mixin.mediaTv() {
+      width: 520px;
+    }
   }
 
   &__close {
@@ -258,6 +262,10 @@
       row-gap: 10px;
       z-index: 2;
     }
+
+    @include mixin.mediaTv() {
+      height: max-content;
+    }
   }
 
   &__welcome {
@@ -281,6 +289,10 @@
       letter-spacing: 0.5rem;
       -webkit-text-stroke: 1px vars.$only-white;
     }
+
+    @include mixin.mediaTv() {
+      font-size: 5rem;
+    }
   }
 
   &__h1Span {
@@ -303,6 +315,10 @@
     @include mixin.media() {
       font-size: 2rem;
     }
+
+    @include mixin.mediaTv() {
+      font-size: 3rem;
+    }
   }
 
   &__p {
@@ -314,6 +330,11 @@
       width: 350px;
       text-align: start;
       letter-spacing: 0.1rem;
+    }
+
+    @include mixin.mediaTv() {
+      width: 70%;
+      font-size: 2rem;
     }
   }
 
@@ -405,6 +426,13 @@
       -ms-transform: translateY(-5px);
       -o-transform: translateY(-5px);
     }
+
+    @include mixin.mediaTv() {
+      width: 400px;
+      height: 60px;
+      @include mixin.flex(center, center, row);
+      font-size: 2rem;
+    }
   }
 
   &__downloadIcon {
@@ -495,6 +523,11 @@
       &:hover {
         background-color: #0e76a8;
       }
+    }
+
+    @include mixin.mediaTv() {
+      width: 50px;
+      height: 50px;
     }
   }
 }
