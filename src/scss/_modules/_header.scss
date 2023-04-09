@@ -363,10 +363,10 @@
     }
 
     @include mixin.mediaTv() {
-      top: calc(50% - 305px);
+      top: 50px;
       right: calc(20% - 285px);
       width: 570px;
-      height: 610px;
+      height: 90vh;
       clip-path: none;
       border-radius: vars.$borderRadius;
       overflow: hidden;
