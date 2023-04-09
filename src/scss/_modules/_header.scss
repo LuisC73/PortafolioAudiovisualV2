@@ -4,7 +4,7 @@
 .header {
   position: relative;
   width: 100%;
-  max-width: 1380px;
+  // max-width: 1380px;
   margin: 0 auto;
   height: 100%;
   padding: 10px 0 20px 0;
@@ -16,11 +16,16 @@
     padding: 0;
   }
 
+  @include mixin.mediaTv() {
+    width: 1600px;
+    padding: 0;
+  }
+
   &__nav {
     position: fixed;
     top: 0;
     width: 100%;
-    max-width: 1380px;
+    // max-width: 1600px;
     padding: 0 10px;
     @include mixin.flex(flex-end, center, row);
     z-index: 5;
@@ -31,6 +36,10 @@
 
     @include mixin.media(1025px) {
       padding: 20px 50px;
+    }
+
+    @include mixin.mediaTv() {
+      width: 1600px;
     }
   }
 
@@ -351,6 +360,10 @@
         height: 100%;
         background-color: rgba(0, 0, 0, 0.2);
       }
+    }
+
+    @include mixin.mediaTv() {
+      width: 800px;
     }
   }
 

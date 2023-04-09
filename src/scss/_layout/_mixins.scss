@@ -27,3 +27,9 @@
     @content;
   }
 }
+
+@mixin mediaTv($tamaño: 1400px) {
+  @media screen and (min-width: $tamaño) {
+    @content;
+  }
+}
