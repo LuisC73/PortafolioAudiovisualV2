@@ -17,7 +17,7 @@
   }
 
   @include mixin.mediaTv() {
-    width: 1600px;
+    width: 100%;
     padding: 0;
   }
 
@@ -25,7 +25,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    // max-width: 1600px;
+    // max-width: 1380px;
     padding: 0 10px;
     @include mixin.flex(flex-end, center, row);
     z-index: 5;
@@ -39,7 +39,7 @@
     }
 
     @include mixin.mediaTv() {
-      width: 1600px;
+      width: 100%;
     }
   }
 
@@ -363,7 +363,13 @@
     }
 
     @include mixin.mediaTv() {
-      width: 800px;
+      top: calc(50% - 305px);
+      right: calc(20% - 285px);
+      width: 570px;
+      height: 610px;
+      clip-path: none;
+      border-radius: vars.$borderRadius;
+      overflow: hidden;
     }
   }
 

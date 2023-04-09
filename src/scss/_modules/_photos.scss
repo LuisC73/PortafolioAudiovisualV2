@@ -3,7 +3,7 @@
 
 .photos {
   width: 90%;
-  max-width: 1380px;
+  // max-width: 1380px;
   margin: 40px auto 0 auto;
   @include mixin.flex(center, flex-start, column);
   text-align: start;
@@ -11,6 +11,10 @@
   @include mixin.media() {
     width: 100%;
     padding: 50px;
+  }
+
+  @include mixin.mediaTv() {
+    width: 100%;
   }
 
   &__h3 {
