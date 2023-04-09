@@ -17,7 +17,7 @@
   }
 
   @include mixin.mediaTv() {
-    width: 100%;
+    width: 90%;
     padding: 0;
   }
 
@@ -39,7 +39,7 @@
     }
 
     @include mixin.mediaTv() {
-      width: 100%;
+      width: 90%;
     }
   }
 
@@ -364,7 +364,7 @@
 
     @include mixin.mediaTv() {
       top: 50px;
-      right: calc(20% - 285px);
+      right: calc(25% - 285px);
       width: 570px;
       height: 90vh;
       clip-path: none;
