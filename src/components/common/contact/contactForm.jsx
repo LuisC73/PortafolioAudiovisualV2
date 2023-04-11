@@ -78,6 +78,7 @@ function ContactForm() {
         type="text"
         placeholder="Nombre"
         autoComplete="name"
+        required
         className={
           errors.user_name
             ? "contactContent__input contactContent__input--error"
@@ -91,6 +92,7 @@ function ContactForm() {
         type="email"
         placeholder="Correo"
         autoComplete="email"
+        required
         className={
           errors.user_email
             ? "contactContent__input contactContent__input--error"
@@ -104,6 +106,7 @@ function ContactForm() {
         cols="30"
         rows="10"
         placeholder="Mensaje"
+        required
         className={
           errors.message
             ? "contactContent__input contactContent__input--error"
