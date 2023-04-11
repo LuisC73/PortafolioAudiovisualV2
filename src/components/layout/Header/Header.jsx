@@ -42,7 +42,7 @@ function Header() {
           de crear, dejas de creer y por lo tanto de crecer"
         </p>
         <a
-          href="#"
+          href="/CV Ana Manuela Ramirez C.pdf"
           className="header__download"
           aria-label="Descargar Cv"
           download

@@ -1,47 +1,51 @@
 const photosInfo = [
   {
     imgSrc: "photoImg1",
-    description: "Foto",
+    description: "Fotografía de naturaleza",
   },
   {
     imgSrc: "photoImg2",
-    description: "Foto",
+    description: "Fotografía de naturaleza",
   },
   {
     imgSrc: "photoImg3",
-    description: "Foto",
+    description: "Fotografía de naturaleza",
   },
   {
     imgSrc: "photoImg4",
-    description: "Foto",
+    description: "Fotografía de naturaleza",
   },
   {
     imgSrc: "photoImg5",
-    description: "Foto",
+    description: "Fotografía documental",
   },
   {
-    imgSrc: "photoImg1",
-    description: "Foto",
+    imgSrc: "photoImg6",
+    description: "Fotografía documental",
   },
   {
-    imgSrc: "photoImg3",
-    description: "Foto",
+    imgSrc: "photoImg7",
+    description: "Fotografía de naturaleza",
   },
   {
-    imgSrc: "photoImg5",
-    description: "Foto",
+    imgSrc: "photoImg8",
+    description: "Fotografía de naturaleza",
   },
   {
-    imgSrc: "photoImg4",
-    description: "Foto",
+    imgSrc: "photoImg9",
+    description: "Fotografía de naturaleza",
   },
   {
-    imgSrc: "photoImg1",
-    description: "Foto",
+    imgSrc: "photoImg11",
+    description: "Retrato",
   },
   {
-    imgSrc: "photoImg5",
-    description: "Foto",
+    imgSrc: "photoImg12",
+    description: "Retrato",
+  },
+  {
+    imgSrc: "photoImg10",
+    description: "Retrato",
   },
 ];
 
