@@ -174,11 +174,11 @@
   }
 
   &__flex {
+    width: 100%;
     @include mixin.flex(center, center, column);
     gap: 20px;
 
     @include mixin.media() {
-      width: 100%;
       @include mixin.flex(space-between, center, row);
     }
   }
