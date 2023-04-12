@@ -45,7 +45,7 @@ $skillLenght: 0%;
 
   &__wrapper {
     width: 100%;
-    @include mixin.grid(2, 1fr, 20px);
+    @include mixin.flex(center, center, row);
   }
 
   &__column {
@@ -69,6 +69,11 @@ $skillLenght: 0%;
   &__skills {
     width: 100%;
     @include mixin.flex(space-between, center, row);
+    gap: 10px;
+
+    @include mixin.media() {
+      gap: 50px;
+    }
   }
 
   &__p {
@@ -133,39 +138,6 @@ $skillLenght: 0%;
     &:hover {
       color: vars.$only-white;
     }
-  }
-
-  &__figure {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-
-    @include mixin.media() {
-      width: 80%;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba($color: #000000, $alpha: 0.5);
-    }
-  }
-
-  &__img {
-    width: 100%;
-    height: 100%;
   }
 
   &__bottom {

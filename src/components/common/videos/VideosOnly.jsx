@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import videosInfoAll from "../../../utils/videosOnlyInfo";
 import VideoItem from "./videosItem";
+import VideosItem2 from "./VideosItem2";
 
 function VideosOnly() {
   return (
@@ -14,9 +15,9 @@ function VideosOnly() {
         </Link>
       </div>
 
-      <div className="videosContent__wrapper">
+      <div className="videosContent__col">
         {videosInfoAll.map((video, i) => (
-          <VideoItem
+          <VideosItem2
             key={i}
             title={video.titulo}
             videoURL={video.video}
