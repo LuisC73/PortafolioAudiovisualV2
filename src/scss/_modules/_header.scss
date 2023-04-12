@@ -177,6 +177,7 @@
     text-transform: uppercase;
     letter-spacing: 0.3rem;
     text-align: left;
+    color: vars.$only-white;
 
     @include mixin.media() {
       font-size: 4rem;
@@ -196,6 +197,7 @@
   &__a {
     position: relative;
     font-size: 2.2rem;
+    color: vars.$only-white;
 
     @include mixin.media() {
       font-size: 1.8rem;

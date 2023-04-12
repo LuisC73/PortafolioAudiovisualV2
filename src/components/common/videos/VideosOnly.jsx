@@ -1,15 +1,21 @@
 import { Link } from "react-router-dom";
-import videosInfo from "../../../utils/videosInformation";
+import videosInfoAll from "../../../utils/videosOnlyInfo";
 import VideoItem from "./videosItem";
 
-function VideosContent() {
+function VideosOnly() {
   return (
     <section className="videosContent" id="videos">
-      <h3 className="videosContent__h3">
-        Vid<span className="videosContent__span">eos</span>
-      </h3>
+      <div className="videosContent__flex">
+        <h3 className="videosContent__h3">
+          Vid<span className="videosContent__span">eos</span>
+        </h3>
+        <Link to={"/"} className="videosContent__dir">
+          Volver Atrás
+        </Link>
+      </div>
+
       <div className="videosContent__wrapper">
-        {videosInfo.map((video, i) => (
+        {videosInfoAll.map((video, i) => (
           <VideoItem
             key={i}
             title={video.titulo}
@@ -21,11 +27,8 @@ function VideosContent() {
           />
         ))}
       </div>
-      <Link to={"/videos"} className="videosContent__dir">
-        Ver Más
-      </Link>
     </section>
   );
 }
 
-export default VideosContent;
+export default VideosOnly;

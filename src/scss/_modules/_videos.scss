@@ -168,6 +168,20 @@
     border-radius: 7px 0 0 7px;
     overflow: hidden;
   }
+
+  &__dir {
+    @include mixin.button;
+  }
+
+  &__flex {
+    @include mixin.flex(center, center, column);
+    gap: 20px;
+
+    @include mixin.media() {
+      width: 100%;
+      @include mixin.flex(space-between, center, row);
+    }
+  }
 }
 
 .swiper-button-prev,
