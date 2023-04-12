@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import images from "../../../helpers/images";
 
-function PhotoItem({ i, imgSrc, description }) {
+function PhotoItem({ i, imgSrc, description, date }) {
   const [modal, setModal] = useState(false);
   const [tempImg, setTempImg] = useState("");
 
@@ -38,6 +38,10 @@ function PhotoItem({ i, imgSrc, description }) {
           loading="lazy"
           className="photos__img"
         />
+        <div className="photos__flex">
+          <p className="photos__p">{date}</p>
+          <p className="photos__p">{description}</p>
+        </div>
       </figure>
     </>
   );

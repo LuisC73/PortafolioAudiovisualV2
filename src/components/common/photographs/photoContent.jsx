@@ -13,6 +13,7 @@ function PhotoContent() {
             key={i}
             imgSrc={photo.imgSrc}
             description={photo.description}
+            date={photo.date}
           />
         ))}
       </div>
