@@ -80,7 +80,7 @@ const videosInfoAll = [
     youtube: "#",
   },
   {
-    titulo: "Edición",
+    titulo: "Edición y animación",
     des: "Publicidad Campaña FINO Services",
     data: ["Abril 2023", "1:39 min"],
     video: "Fino",

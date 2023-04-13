@@ -30,6 +30,7 @@ function VideosItem2({
             </span>
           ))}
         </div>
+        <p className="videosContent__p">{description}</p>
       </div>
     </div>
   );
