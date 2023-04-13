@@ -18,26 +18,7 @@
   }
 
   &__h3 {
-    color: vars.$only-white;
-    font-size: 3rem;
-    font-family: vars.$fontFamilyTitles;
-    text-transform: uppercase;
-    text-align: start;
-    letter-spacing: 0.2rem;
-
-    @include mixin.media() {
-      font-size: 5rem;
-    }
-
-    @include mixin.mediaTv() {
-      font-size: 5.2rem;
-    }
-  }
-
-  &__span {
-    font-size: inherit;
-    font-family: inherit;
-    color: vars.$green-black;
+    @include mixin.titleSection;
   }
 
   &__wrapper {

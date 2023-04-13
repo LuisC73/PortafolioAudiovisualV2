@@ -1,3 +1,4 @@
+import AlliancesContent from "../../common/alliances/alliancesContent";
 import ContactContent from "../../common/contact/contactContent";
 import PhotoContent from "../../common/photographs/photoContent";
 import SkillContent from "../../common/skills/skillsContent";
@@ -16,6 +17,7 @@ function MainLayout() {
         <SkillContent />
         <PhotoContent />
         <VideosContent />
+        <AlliancesContent />
         <ContactContent />
       </main>
       <Footer />

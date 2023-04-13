@@ -9,6 +9,7 @@ const videos = {
   Ranking: "/videos/8.Animación-Campaña.mp4",
   Mujer: "/videos/9.Producciónyedición.mp4",
   Produccion: "/videos/10.Producciónyedición.mp4",
+  Fino: "/videos/Edición-Campaña.mp4",
 };
 
 export default videos;

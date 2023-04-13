@@ -1,22 +1,22 @@
 const photosInfo = [
   {
     imgSrc: "photoImg1",
-    description: "Fotografía de naturaleza",
+    description: "Fotografía paisajística",
     date: "Octubre 2020",
   },
   {
     imgSrc: "photoImg2",
-    description: "Fotografía de naturaleza",
+    description: "Fotografía paisajística",
     date: "Enero 2022",
   },
   {
     imgSrc: "photoImg3",
-    description: "Fotografía de naturaleza",
+    description: "Fotografía paisajística",
     date: "Julio 2021",
   },
   {
     imgSrc: "photoImg4",
-    description: "Fotografía de naturaleza",
+    description: "Fotografía paisajística",
     date: "Noviembre 2021",
   },
   {
@@ -41,7 +41,7 @@ const photosInfo = [
   },
   {
     imgSrc: "photoImg9",
-    description: "Fotografía de naturaleza",
+    description: "Fotografía paisajística",
     date: "Febrero 2023",
   },
   {

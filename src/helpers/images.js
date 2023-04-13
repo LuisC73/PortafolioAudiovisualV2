@@ -24,8 +24,8 @@ const images = {
   PosterRanking: "https://i.postimg.cc/0Qt8d0T3/ranking.png",
   PosterMujer: "https://i.postimg.cc/2y5qF6Vk/mujer.png",
   PosterProduccion: "https://i.postimg.cc/yN1xmxJD/fino.png",
-  skills:
-    "https://images.pexels.com/photos/217380/pexels-photo-217380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  PosterFino: "https://i.postimg.cc/HndrjXbW/finoedicion.png",
+  Agencia: "https://i.postimg.cc/W1gtm5Sp/agencias.png",
 };
 
 export default images;

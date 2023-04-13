@@ -1,0 +1,19 @@
+@use "../_layout/vars" as vars;
+@use "../_layout/mixins" as mixin;
+
+.alliancesContent {
+  width: 90%;
+  margin: 40px auto 0 auto;
+  text-align: start;
+
+  &__h3 {
+    @include mixin.titleSection;
+  }
+
+  &__img {
+    width: 259px;
+    height: 103px;
+    object-fit: contain;
+    margin: 40px auto 0;
+  }
+}

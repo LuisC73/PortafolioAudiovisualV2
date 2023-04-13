@@ -36,6 +36,29 @@
   }
 }
 
+@mixin titleSection {
+  color: $only-white;
+  font-size: 3rem;
+  font-family: $fontFamilyTitles;
+  text-transform: uppercase;
+  text-align: start;
+  letter-spacing: 0.2rem;
+
+  @include media() {
+    font-size: 5rem;
+  }
+
+  @include mediaTv() {
+    font-size: 5.2rem;
+  }
+
+  & span {
+    font-size: inherit;
+    font-family: inherit;
+    color: $green-black;
+  }
+}
+
 @mixin button {
   position: relative;
   order: 5;
