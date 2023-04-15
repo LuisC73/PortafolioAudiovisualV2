@@ -153,6 +153,8 @@
 
   &__dir {
     @include mixin.button;
+    margin-top: 30px;
+    z-index: 6;
   }
 
   &__flex {

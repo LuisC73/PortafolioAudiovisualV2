@@ -4,7 +4,6 @@
 .header {
   position: relative;
   width: 100%;
-  // max-width: 1380px;
   margin: 0 auto;
   height: 100%;
   padding: 10px 0 20px 0;
@@ -25,7 +24,6 @@
     position: fixed;
     top: 0;
     width: 100%;
-    // max-width: 1380px;
     padding: 0 10px;
     @include mixin.flex(flex-end, center, row);
     z-index: 5;
