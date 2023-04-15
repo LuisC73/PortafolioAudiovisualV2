@@ -1,26 +1,40 @@
 import { FiMail } from "react-icons/fi";
-import { FaYoutube, FaInstagram, FaPhoneAlt } from "react-icons/fa";
+import { FaYoutube, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import images from "../../../helpers/images";
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer__col">
-        <p className="footer__p">
-          <FaPhoneAlt className="footer__icon" />{" "}
+        <a
+          className="footer__link"
+          href="https://wa.me/+573207925550"
+          target="_blank"
+        >
+          <FaWhatsapp className="footer__icon" />
           <span className="footer__span">320 7925550</span>
-        </p>
-        <p className="footer__p">
+        </a>
+        <a className="footer__link" href="mailto:amramirezcu@gmail.com">
           <FiMail className="footer__icon" />
           <span className="footer__span">amramirezcu@gmail.com</span>
-        </p>
+        </a>
       </div>
       <div className="footer__col">
         <p className="footer__p footer__p--title">Redes sociales</p>
         <div className="footer__social">
-          <a href="#" className="footer__a" aria-label="Youtube">
+          <a
+            href="https://www.youtube.com/@anamanuelaramirezcurequia1409"
+            className="footer__a"
+            aria-label="Youtube"
+            target="_blank"
+          >
             <FaYoutube className="footer__icon" />
           </a>
-          <a href="#">
+          <a
+            href="https://www.instagram.com/ana_ramireez03/"
+            className="footer__a"
+            aria-label="Instagram"
+            target="_blank"
+          >
             <FaInstagram className="footer__icon" aria-label="Instagram" />
           </a>
         </div>

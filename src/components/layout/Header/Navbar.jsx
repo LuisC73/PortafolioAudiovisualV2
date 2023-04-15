@@ -60,11 +60,6 @@ function Navbar() {
           </a>
         </li>
         <li className="header__li">
-          <a href="#contact" className="header__a" data-text="Contacto">
-            Contacto
-          </a>
-        </li>
-        <li className="header__li">
           <a href="#photos" className="header__a" data-text="Fotografías">
             Fotografías
           </a>
@@ -72,6 +67,16 @@ function Navbar() {
         <li className="header__li">
           <a href="#videos" className="header__a" data-text="Videos">
             Videos
+          </a>
+        </li>
+        <li className="header__li">
+          <a href="#alianzas" className="header__a" data-text="Alianzas">
+            Alianzas
+          </a>
+        </li>
+        <li className="header__li">
+          <a href="#contact" className="header__a" data-text="Contacto">
+            Contacto
           </a>
         </li>
       </ul>

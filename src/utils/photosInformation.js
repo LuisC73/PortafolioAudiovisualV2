@@ -41,22 +41,22 @@ const photosInfo = [
   },
   {
     imgSrc: "photoImg9",
-    description: "Fotografía paisajística",
+    description: "Fotografía callejera",
     date: "Febrero 2023",
   },
   {
     imgSrc: "photoImg11",
-    description: "Retrato",
+    description: "Fotografía artistica",
     date: "Abril 2023",
   },
   {
     imgSrc: "photoImg12",
-    description: "Retrato",
+    description: "Fotografía artistica",
     date: "Abril 2023",
   },
   {
     imgSrc: "photoImg10",
-    description: "Retrato",
+    description: "Fotografía artistica",
     date: "Abril 2023",
   },
 ];

@@ -1,7 +1,7 @@
 const images = {
   Me: "https://i.postimg.cc/J0Tdg6wp/portafolio.jpg",
-  logo: "https://i.postimg.cc/y6ZtsS2d/Logo-AMWhite.png",
-  logoBlack: "https://i.postimg.cc/MKtkMQfW/LogoAM.png",
+  logo: "https://i.postimg.cc/3x8JxWSk/Logo-AMWhite.png",
+  logoBlack: "https://i.postimg.cc/XJVZMxRz/LogoAM.png",
   photoImg1: "https://i.postimg.cc/kGTQqWPd/1-Fotograf-a-de-naturaleza.jpg",
   photoImg2: "https://i.postimg.cc/FsKbGC0F/2-Fotograf-a-de-naturaleza.jpg",
   photoImg3: "https://i.postimg.cc/cHNMmsBP/3-Fotograf-a-de-naturaleza.jpg",

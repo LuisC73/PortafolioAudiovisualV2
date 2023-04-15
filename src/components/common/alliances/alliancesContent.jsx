@@ -2,7 +2,7 @@ import images from "../../../helpers/images";
 
 function AlliancesContent() {
   return (
-    <section className="alliancesContent">
+    <section className="alliancesContent" id="alianzas">
       <h3 className="alliancesContent__h3">
         Alia<span className="alliancesContent__span">nzas</span>
       </h3>

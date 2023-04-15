@@ -83,4 +83,12 @@
   &__span {
     text-transform: lowercase;
   }
+
+  &__link {
+    @extend .footer__p;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

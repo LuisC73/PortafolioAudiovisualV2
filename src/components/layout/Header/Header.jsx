@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 function Header() {
   return (
-    <header className="header">
+    <header className="header" id="inicio">
       <Navbar />
       <motion.img
         src={images.logo}
