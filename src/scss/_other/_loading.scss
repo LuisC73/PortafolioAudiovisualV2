@@ -1,0 +1,26 @@
+@use "../_layout/vars" as vars;
+@use "../_layout/mixins" as mixin;
+
+.loading {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  @include mixin.flex(center, center, column);
+
+  &__p {
+    margin-top: 40px;
+    color: vars.$off-white;
+    font-weight: 700;
+    font-size: 1.6rem;
+    font-family: vars.$fontFamilyTitles;
+    letter-spacing: 0.5rem;
+  }
+
+  &__span {
+    font-family: inherit;
+    color: vars.$green-black;
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin-top: 10px;
+  }
+}
