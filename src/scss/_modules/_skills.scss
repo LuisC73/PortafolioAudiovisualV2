@@ -17,7 +17,7 @@ $skillLenght: 0%;
   }
 
   @include mixin.mediaTv() {
-    width: 90%;
+    width: 100%;
   }
 
   &__h3 {
@@ -120,16 +120,11 @@ $skillLenght: 0%;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-    transition: color 0.1s, background-color 0.2s ease-in-out,
-      left 1s ease-in-out;
-    -webkit-transition: color 0.1s, background-color 0.2s ease-in-out,
-      left 1s ease-in-out;
-    -moz-transition: color 0.1s, background-color 0.2s ease-in-out,
-      left 1s ease-in-out;
-    -ms-transition: color 0.1s, background-color 0.2s ease-in-out,
-      left 1s ease-in-out;
-    -o-transition: color 0.1s, background-color 0.2s ease-in-out,
-      left 1s ease-in-out;
+    transition: color 0.1s, background-color 0.2s ease-in-out, left 1s ease-in-out;
+    -webkit-transition: color 0.1s, background-color 0.2s ease-in-out, left 1s ease-in-out;
+    -moz-transition: color 0.1s, background-color 0.2s ease-in-out, left 1s ease-in-out;
+    -ms-transition: color 0.1s, background-color 0.2s ease-in-out, left 1s ease-in-out;
+    -o-transition: color 0.1s, background-color 0.2s ease-in-out, left 1s ease-in-out;
 
     @include mixin.media() {
       left: -285px;
