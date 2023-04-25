@@ -35,7 +35,7 @@ function App() {
           />
           <p className="loading__p">
             Portafolio <br />
-            <span className="loading__span">Ana Manuela Ramirez</span>
+            <span className="loading__span">Ana Manuela Ramírez</span>
           </p>
         </div>
       ) : (
