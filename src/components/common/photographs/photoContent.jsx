@@ -12,6 +12,7 @@ function PhotoContent() {
           <PhotoItem
             key={i}
             imgSrc={photo.imgSrc}
+            category={photo.category}
             description={photo.description}
             date={photo.date}
           />

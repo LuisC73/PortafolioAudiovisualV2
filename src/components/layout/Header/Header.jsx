@@ -29,17 +29,13 @@ function Header() {
           delay: "0.4",
         }}
       >
-        <motion.h1
-          className="header__h1"
-          initial={{ y: 10 }}
-          animate={{ y: 0 }}
-        >
-          Ana Manuela<span className="header__h1Span"> Ramirez</span>
+        <motion.h1 className="header__h1" initial={{ y: 10 }} animate={{ y: 0 }}>
+          Ana Manuela<span className="header__h1Span"> Ramírez</span>
         </motion.h1>
         <h2 className="header__h2">Realizadora Audiovisual</h2>
         <p className="header__p">
-          "Esto se trata de mantener la creatividad en supervivencia, si dejas
-          de crear, dejas de creer y por lo tanto de crecer"
+          "Esto se trata de mantener la creatividad en supervivencia, si dejas de crear, dejas de
+          creer y por lo tanto de crecer"
         </p>
         <a
           href="/CV Ana Manuela Ramirez C.pdf"
@@ -81,7 +77,7 @@ function Header() {
           delay: "0.4",
         }}
       >
-        <img src={images.Me} alt="Me" className="header__img" />
+        <img src={images.Me} alt="Ana Manuela Ramírez" className="header__img" />
       </motion.figure>
 
       <ScrollBottom />

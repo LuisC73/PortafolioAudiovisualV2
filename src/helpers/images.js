@@ -11,7 +11,7 @@ const images = {
   photoImg7: "https://i.postimg.cc/qvSGNchJ/7-Fotograf-a-de-naturaleza.jpg",
   photoImg8: "https://i.postimg.cc/pdKKywMC/7-Fotograf-a-de-naturaleza-1.jpg",
   photoImg9: "https://i.postimg.cc/JzDNCyT9/8-Fotograf-a-de-naturaleza.jpg",
-  photoImg10: "https://i.postimg.cc/MHKJ4JYp/8-Retrato-1.jpg",
+  photoImg10: "https://i.postimg.cc/0NS0D6Dp/8-Retrato.jpg",
   photoImg11: "https://i.postimg.cc/c1hMRGg5/9-Retrato.jpg",
   photoImg12: "https://i.postimg.cc/DZFLGx2T/10-Retrato.jpg",
   PosterMatizando: "https://i.postimg.cc/YqwGvk5S/matizando.webp",

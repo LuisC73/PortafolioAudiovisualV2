@@ -9,7 +9,7 @@ const programsInfo = [
   },
   {
     text: "Lightroom",
-    stars: 3,
+    stars: 4,
   },
 ];
 
