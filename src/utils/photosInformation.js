@@ -17,7 +17,7 @@ const photosInfo = [
     imgSrc: "photoImg3",
     category: "Fotografía paisajística",
     description:
-      "Captura de las montañas de mi pueblo Buriticá, aplicando una ley del horizonte, me gusta mucho resaltar lo sublime que pueden llegar a ser los paisajes, aún en sus días grises",
+      "Captura de las montañas de mi pueblo Buriticá, aplicando la ley del horizonte, me gusta mucho resaltar lo sublime que pueden llegar a ser los paisajes, aún en sus días grises.",
     date: "Julio 2021",
   },
   {
@@ -31,7 +31,7 @@ const photosInfo = [
     imgSrc: "photoImg5",
     category: "Fotografía documental",
     description:
-      "Fotografía tomada durante los Juegos Deportivos Nacionales del Magisterio, refleja los nervios y expectativas que tiene un deportista antes de empezar la competencia. ",
+      "Fotografía tomada durante los Juegos Deportivos Nacionales del Magisterio, refleja los nervios y expectativas que tiene un deportista antes de empezar la competencia.",
     date: "Octubre 2022",
   },
   {

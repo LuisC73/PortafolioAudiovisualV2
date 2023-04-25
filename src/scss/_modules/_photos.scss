@@ -3,7 +3,6 @@
 
 .photos {
   width: 90%;
-  // max-width: 1380px;
   margin: 40px auto 0 auto;
   @include mixin.flex(center, flex-start, column);
   text-align: start;
@@ -35,8 +34,8 @@
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
-    text-align: end;
-    @include mixin.flex(flex-end, flex-end, column);
+    text-align: start;
+    @include mixin.flex(flex-start, flex-start, column);
   }
 
   &__textModal {
@@ -67,9 +66,8 @@
     transition: all 350ms ease;
 
     &:hover {
-      filter: opacity(0.5);
-
       img {
+        filter: opacity(0.5);
         transform: rotate(10deg) scale(1.3);
       }
 
